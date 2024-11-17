@@ -63,36 +63,118 @@ h6 {
 
 /* Meu CSS */
 
+.roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.roboto-thin-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.roboto-light-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.roboto-regular-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.roboto-medium-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.roboto-bold-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.roboto-black-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+:root {
+  font-family: "Roboto";
+  font-size: 10px;
+}
+
 body {
   display: grid;
   height: 100vh;
   grid-template-columns: 1fr 5fr;
-  grid-template-rows: 1fr 6fr;
+  grid-template-rows: 1fr 7fr;
   margin: 0;
-  gap: 15px;
-}
-
-.sidebar {
-  grid-row: 1 / 3;
+  gap: 25px;
+  background-color: #fffbeb;
 }
 
 .header {
   display: grid;
   grid-template-columns: 1fr 10fr 1fr 1fr 3fr;
   grid-template-rows: 1fr 1fr;
+  background-color: #fff;
+  margin-left: -25px;
+  padding: 25px;
+  box-shadow: 3px 3px 3px #ddd;
 }
 
+h1 {
+  font-size: 30px;
+}
+
+.searchbar {
+  height: 40px;
+}
 
 .main-content {
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-template-rows: 1fr 1fr;
-  height: 85%;
+  height: 90%;
   gap: 20px;
-}
-
-h2 {
-  margin: 0 0 15px 0;
+  width: 97%;
 }
 
 .projetos{
@@ -102,23 +184,35 @@ h2 {
 .sidebar {
   display: grid;
   grid-template-columns: 1fr 4fr;
-  grid-template-rows: 2fr repeat(5, 1fr) 2fr repeat(4, 1fr);
+  grid-template-rows: 2fr repeat(5, 1fr) 2fr repeat(3, 1fr);
   gap: 5px;
   padding: 20px 0 300px 30px;
+  grid-row: 1 / 3;
+  background-color: #fcd34d;
+  font-size: 2.2rem;
+  font-weight: 700;
 }
 
 .sidebar .logo {
   display: grid;
   grid-template-columns: subgrid;
   grid-column: span 2;
+  grid-row: 1;
 }
 
+.sidebar>a>span {
+  font-size: 3rem;
+  color: #fff;
+}
+.sidebar>nav>a {
+  color: #fff;
+}
 .sidebar div {
   display: grid;
   grid-template-columns: subgrid;
   grid-template-rows: subgrid;
   grid-column: 1;
-  grid-row: 3 / 12;
+  grid-row: 2 / 11;
 }
 
 .sidebar nav {
@@ -126,7 +220,12 @@ h2 {
   grid-template-columns: subgrid;
   grid-template-rows: subgrid;
   grid-column: 2;
-  grid-row: 3 / 12;
+  grid-row: 2 / 11;
+}
+
+h2 {
+  height: 40px;
+  font-size: 2.3rem;
 }
 
 .projetos-conteudo {
@@ -134,7 +233,16 @@ h2 {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 30px;
-  height: 100%;
+  height: calc(100% - 40px);
+}
+
+.projetos-conteudo div {
+  position: relative;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  border-left: 10px solid #6d28d9;
+  box-shadow: 3px 3px 3px #ddd;
 }
 
 .anuncios-conteudo {
@@ -142,32 +250,28 @@ h2 {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 10px;
-  height: 95%;
+  border-radius: 10px;
+  height: calc(100% - 40px);
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 3px 3px 3px #ddd;
 }
+
 
 .tendencias-conteudo {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 10px;
-  height: 100%;
+  border-radius: 10px;
+  height: calc(100% - 40px);
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 3px 3px 3px #ddd;
 }
 
 
 
-/*.sidebar span{
-  padding: 20px 0 0 50px;
+.sidebar a {
+  text-decoration: none;
 }
-
-.sidebar > ul {
-  padding-left: 50px;
-}
-
-.sidebar > ul > li {
-  margin: 30px 0;
-  list-style: none;
-}
-
-.sidebar > ul > li:nth-child(6){
-  margin-bottom: 60px;
-}*/
