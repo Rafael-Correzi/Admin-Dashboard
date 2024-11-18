@@ -147,7 +147,7 @@ body {
   grid-template-rows: 1fr 7fr;
   margin: 0;
   gap: 25px;
-  background-color: #fffbeb;
+  background-color: #f5f3ff;
 }
 
 .header {
@@ -184,11 +184,12 @@ h1 {
 .sidebar {
   display: grid;
   grid-template-columns: 1fr 4fr;
-  grid-template-rows: 2fr repeat(5, 1fr) 2fr repeat(3, 1fr);
-  gap: 5px;
-  padding: 20px 0 300px 30px;
+  grid-template-rows: 2fr repeat(9, 1fr);
+  row-gap: 5px;
+  column-gap: 5px;
+  padding: 20px 0 300px 15px;
   grid-row: 1 / 3;
-  background-color: #fcd34d;
+  background-color: #6d28d9;
   font-size: 2.2rem;
   font-weight: 700;
 }
@@ -198,29 +199,55 @@ h1 {
   grid-template-columns: subgrid;
   grid-column: span 2;
   grid-row: 1;
+  align-items: center;
 }
 
-.sidebar>a>span {
+.sidebar>.logo>img{
+  justify-self: center;
+}
+
+.sidebar>.logo>span {
   font-size: 3rem;
   color: #fff;
 }
+
 .sidebar>nav>a {
   color: #fff;
 }
-.sidebar div {
+
+
+.sidebar>.icones {
   display: grid;
   grid-template-columns: subgrid;
   grid-template-rows: subgrid;
   grid-column: 1;
   grid-row: 2 / 11;
+  justify-items: center;
+  align-items: center;
+
 }
 
-.sidebar nav {
+.sidebar>nav {
   display: grid;
   grid-template-columns: subgrid;
   grid-template-rows: subgrid;
   grid-column: 2;
   grid-row: 2 / 11;
+  align-items: center;
+}
+
+.sidebar>.icones>span:nth-child(7){
+  margin-top: 60px;
+  margin-bottom: 5px;
+
+
+}
+
+.sidebar>nav>a:nth-child(7){
+  margin-top: 60px;
+  margin-bottom: 5px;
+  
+
 }
 
 h2 {
@@ -241,7 +268,7 @@ h2 {
   background-color: #fff;
   border-radius: 10px;
   padding: 20px;
-  border-left: 10px solid #6d28d9;
+  border-left: 10px solid #94D928;
   box-shadow: 3px 3px 3px #ddd;
 }
 
@@ -274,4 +301,12 @@ h2 {
 
 .sidebar a {
   text-decoration: none;
+}
+
+.sidebar img {
+ height: 24px;
+}
+
+.sidebar>.logo img {
+  height: 50px;
 }
