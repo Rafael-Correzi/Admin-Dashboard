@@ -143,7 +143,7 @@ h6 {
 body {
   display: grid;
   height: 100vh;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: 320px 1600px;
   grid-template-rows: 1fr 7fr;
   margin: 0;
   gap: 25px;
@@ -152,21 +152,89 @@ body {
 
 .header {
   display: grid;
-  grid-template-columns: 1fr 10fr 1fr 1fr 3fr;
+  grid-template-columns: 120px 20px 900px 140px 140px 250px;
   grid-template-rows: 1fr 1fr;
   background-color: #fff;
   margin-left: -25px;
-  padding: 25px;
+  padding: 0 100px 20px 20px;
   box-shadow: 3px 3px 3px #ddd;
+  align-items: center;
 }
+
+.pesquisa, .notificacao {
+  height: 26px;
+  justify-self: center;
+}
+
+.pesquisa {
+  margin-left: -40px;
+}
+
+.notificacao {
+  justify-self: flex-end;
+  margin-right: 20px;
+}
+
+.searchbar {
+  grid-column: span 2;
+  margin-left: -35px;
+  height: 32px;
+  width: 900px;
+  justify-self: left;
+  border: none;
+  background-color: #dde;
+  border-radius: 14px;
+}
+
+.perfil {
+  clip-path: circle();
+  height: 60px;
+}
+
+header>img {
+  object-fit: cover;
+}
+
+header>img:nth-of-type(4){
+  height: 90px;
+  grid-column: span 2;
+}
+
+.nome {
+  font-weight: 700;
+  white-space: pre-line;
+}
+.nome:nth-of-type(1) {
+  margin-left: -35px;
+  font-size: 2rem;
+  justify-self: start;
+}
+
+.nome:nth-of-type(2) {
+  font-size: 2.6rem;
+}
+
+.nome>span {
+  font-size: 1.8rem;
+}
+
+header>button {
+  width: 120px;
+  height: 38px;
+  border: none;
+  border-radius: 18px;
+  background-color: #6d28d9;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+ 
+}
+
 
 h1 {
   font-size: 30px;
 }
 
-.searchbar {
-  height: 40px;
-}
 
 .main-content {
   display: grid;
