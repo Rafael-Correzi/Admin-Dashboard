@@ -249,7 +249,7 @@ h1 {
 .main-content {
   display: grid;
   grid-template-columns: max(900px, 75%) max(300px, 20%);
-  grid-template-rows: 4fr 3fr;
+  grid-template-rows: 1fr 1fr;
   height: 90%;
   gap: 20px;
   width: 97%;
@@ -400,6 +400,16 @@ h1 {
   padding: 20px;
   background-color: #fff;
   box-shadow: 3px 3px 3px #ddd;
+  font-size: 1.4rem;
+}
+
+.tendencias-conteudo>a>div {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.tendencias-conteudo p {
+  color: #889;
 }
 
 .icones-acao{
@@ -420,3 +430,26 @@ h1 {
 .sidebar>.logo img {
   height: 50px;
 }
+
+.imagem-placeholder {
+  height: 42px;
+  width: 42px;
+  border-radius: 50%;
+}
+
+#img-um {
+  background-color: #93c5fd;
+}
+
+#img-dois {
+  background-color: #fb7185;
+}
+
+#img-tres {
+  background-color: #d6d3d1;
+}
+
+#img-quatro {
+  background-color: #fde047;
+}
+
