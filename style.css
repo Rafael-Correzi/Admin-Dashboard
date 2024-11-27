@@ -171,11 +171,7 @@ a, a:visited, a:hover, a:active {
 
 .pesquisa, .notificacao {
   height: 26px;
-  justify-self: center;
-}
-
-.pesquisa {
-  margin-left: -40px;
+  margin-left: 20px;
 }
 
 .notificacao {
@@ -203,7 +199,8 @@ header>img {
   object-fit: cover;
 }
 
-header>img:nth-of-type(4){
+
+header>img:nth-of-type(2){
   height: 90px;
   grid-column: span 2;
 }
@@ -237,7 +234,12 @@ header>button {
   font-size: 1.5rem;
   font-weight: 700;
   color: #fff;
+  cursor: pointer;
  
+}
+
+header>button:hover {
+  background-color: #7c3aed;
 }
 
 
